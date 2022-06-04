@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1654324515463" clover="3.2.0">
+  <project timestamp="1654324515463" name="All files">
+    <metrics statements="8" coveredstatements="7" conditionals="5" coveredconditionals="4" methods="3" coveredmethods="3" elements="16" coveredelements="14" complexity="0" loc="8" ncloc="8" packages="2" files="3" classes="3"/>
+    <package name="src">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="Sum.js" path="D:\project\Project-Proof\ResearchPlus\project-proof\src\Sum.js">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.component.Dashboard.course-web.test-cases">
+      <metrics statements="6" coveredstatements="5" conditionals="5" coveredconditionals="4" methods="2" coveredmethods="2"/>
+      <file name="CountPreferences.js" path="D:\project\Project-Proof\ResearchPlus\project-proof\src\component\Dashboard\course-web\test-cases\CountPreferences.js">
+        <metrics statements="4" coveredstatements="3" conditionals="5" coveredconditionals="4" methods="1" coveredmethods="1"/>
+        <line num="3" count="1" type="cond" truecount="4" falsecount="1"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+      </file>
+      <file name="NoOfCourses.js" path="D:\project\Project-Proof\ResearchPlus\project-proof\src\component\Dashboard\course-web\test-cases\NoOfCourses.js">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>
