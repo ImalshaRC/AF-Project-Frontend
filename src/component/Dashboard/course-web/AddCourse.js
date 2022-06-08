@@ -144,7 +144,7 @@ const AddCourse = () => {
 
         try{    
             if(true){
-                await axios.post('http://localhost:4500/web/add/', course).then(() => {
+                await axios.post('https://af-project-backend.azurewebsites.net/web/add/', course).then(() => {
                     alert("Web Added Successfully");
                 }).catch((err) => {
                     alert(err);

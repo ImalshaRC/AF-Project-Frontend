@@ -165,7 +165,7 @@ export default function CourseWeb() {
     }, []);
 
     const loadWeb = async() => {
-        const result = await axios.get('http://localhost:4500/web/');
+        const result = await axios.get('https://af-project-backend.azurewebsites.net/web/');
         setGetWeb(result.data);
     }
 

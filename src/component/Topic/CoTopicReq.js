@@ -10,7 +10,7 @@ export default function CoTopicReq(){
 
     useEffect(()=> {
         function getTopic(){
-            axios.get("http://localhost:4500/topic/co-get-topic/" + JSON.parse(localStorage.getItem("username")).toUpperCase())
+            axios.get("https://af-project-backend.azurewebsites.net/topic/co-get-topic/" + JSON.parse(localStorage.getItem("username")).toUpperCase())
             .then((res)=>{
                 setListOfTopic(res.data);
                 // console.log(res.data)

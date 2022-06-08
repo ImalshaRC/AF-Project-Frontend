@@ -42,7 +42,7 @@ const fromun = {margin:'30px auto'};
 
         // console.log(newTopic)
         
-        axios.post("http://localhost:4500/topic/add",newTopic).then(()=>{
+        axios.post("https://af-project-backend.azurewebsites.net/topic/add",newTopic).then(()=>{
         alert("Topic Added")
         
     }).catch((err)=>{

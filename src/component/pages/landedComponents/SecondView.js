@@ -28,7 +28,7 @@ const SecondView = () => {
     const onClickSubmit = async(e) =>{
         e.preventDefault();
         try{
-        const {data:res} = await axios.post("http://localhost:4500/auth/checkpw",credentials);
+        const {data:res} = await axios.post("https://af-project-backend.azurewebsites.net/auth/checkpw",credentials);
         localStorage.setItem("userId",JSON.stringify(res.userId));
         const username = res.userEmail.split('@')[0];
         localStorage.setItem("username",JSON.stringify(username));

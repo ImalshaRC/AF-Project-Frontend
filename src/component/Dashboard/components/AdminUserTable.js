@@ -17,7 +17,7 @@ const updateUpUser= (event,userRole,userId) =>{
       role:updatedRole
     }
 
-    axios.put(`http://localhost:4500/user/edit/${userId}`, updatedUser).then(()=>{
+    axios.put(`https://af-project-backend.azurewebsites.net/user/edit/${userId}`, updatedUser).then(()=>{
     }).catch((err)=>{
       alert(err)
     })
@@ -28,7 +28,7 @@ const updateUpUser= (event,userRole,userId) =>{
       role:updatedRole
     }
 
-    axios.put(`http://localhost:4500/user/edit/${userId}`, updatedUser).then(()=>{
+    axios.put(`https://af-project-backend.azurewebsites.net/user/edit/${userId}`, updatedUser).then(()=>{
     }).catch((err)=>{
       alert(err)
     })
@@ -43,7 +43,7 @@ const updateDownUser= (event,userRole,userId) =>{
       role:updatedRole
     }
 
-    axios.put(`http://localhost:4500/user/edit/${userId}`, updatedUser).then(()=>{
+    axios.put(`https://af-project-backend.azurewebsites.net/user/edit/${userId}`, updatedUser).then(()=>{
     }).catch((err)=>{
       alert(err)
     })
@@ -53,7 +53,7 @@ const updateDownUser= (event,userRole,userId) =>{
       role:updatedRole
     }
 
-    axios.put(`http://localhost:4500/user/edit/${userId}`, updatedUser).then(()=>{
+    axios.put(`https://af-project-backend.azurewebsites.net/user/edit/${userId}`, updatedUser).then(()=>{
     }).catch((err)=>{
       alert(err)
     })
@@ -107,7 +107,7 @@ const columns = [
           variant="contained"
           color="error"
           onClick={(event) => {
-            axios.delete(`http://localhost:4500/user/delete/${cellValues.row._id}`).then((res)=>{
+            axios.delete(`https://af-project-backend.azurewebsites.net/user/delete/${cellValues.row._id}`).then((res)=>{
               alert("Deleted");
             }).catch((err)=>{
                 alert(err.message)
@@ -126,7 +126,7 @@ function AdminUserTable() {
 
   const [tableData, setTableData] = useState([])
 
-    axios.get("http://localhost:4500/user").then((res) => 
+    axios.get("https://af-project-backend.azurewebsites.net/user").then((res) => 
     setTableData((res.data)))
 
     

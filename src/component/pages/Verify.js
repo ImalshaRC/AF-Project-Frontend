@@ -8,7 +8,7 @@ const Verify = () => {
 
     useEffect(() => {            
         try{
-            axios.post('http://localhost:4500/auth/verify/' + token).then(() => {
+            axios.post('https://af-project-backend.azurewebsites.net/auth/verify/' + token).then(() => {
                 // console.log("Success");
                 localStorage.setItem("userToken",token)
                 window.location.href = "/landedpage/firstView";

@@ -40,7 +40,6 @@ function EditProfile(){
     const handleSubmit = async(e) =>{
       e.preventDefault();
       try{
-        // const {data:res} = await axios.post("http://localhost:4500/auth",credentials);
         // const username = credentials.email.split('@')[0];
         // localStorage.setItem("username",JSON.stringify(username));  
         // localStorage.setItem("userId",JSON.stringify(res.data));

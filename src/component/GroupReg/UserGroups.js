@@ -95,7 +95,7 @@ function UserGroup(){
     } ,[]   )
 
     const loadGroups = () => {
-        axios.get(`http://localhost:4500/groups/`)
+        axios.get(`https://af-project-backend.azurewebsites.net/groups/`)
              .then((res)=>{
                 let Group = res.data;
                     setGroup(Group);

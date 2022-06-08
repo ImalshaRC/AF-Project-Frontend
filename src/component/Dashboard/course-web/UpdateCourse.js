@@ -50,7 +50,7 @@ const UpdateCourse = () => {
     }, [])
 
     const loadCourse = async () => {
-        await axios.get("http://localhost:4500/web/get/" + id).then((result) => {
+        await axios.get("https://af-project-backend.azurewebsites.net/web/get/" + id).then((result) => {
             setCourse(result.data);
         })
         
@@ -149,7 +149,7 @@ const UpdateCourse = () => {
 
         try{    
             if(true){
-                await axios.put('http://localhost:4500/web/update/' + id, course).then(() => {
+                await axios.put('https://af-project-backend.azurewebsites.net/web/update/' + id, course).then(() => {
                     alert("Course Updated Successfully");
                 }).catch((err) => {
                     alert(err);

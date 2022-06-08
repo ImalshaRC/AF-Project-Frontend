@@ -34,7 +34,7 @@ const fromun = {margin:'30px auto'};
             panelMember
         }
         
-        axios.post("http://localhost:4500/groups/add",newGroup).then(()=>{
+        axios.post("https://af-project-backend.azurewebsites.net/groups/add",newGroup).then(()=>{
         alert("Group Added")
         
     }).catch((err)=>{

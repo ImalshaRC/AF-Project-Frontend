@@ -16,7 +16,7 @@ function Profile(){
             const userId = JSON.parse(loggedInUserId);
 
         
-             axios.get(`http://localhost:4500/user/${userId}`).then((res)=>{
+             axios.get(`https://af-project-backend.azurewebsites.net/user/${userId}`).then((res)=>{
                 let user = res.data;
                 setUser(user);
 

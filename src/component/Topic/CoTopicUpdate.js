@@ -40,7 +40,7 @@ const fromun = {margin:'30px auto'};
     }, [])
 
     function getTopic(){
-        axios.get("http://localhost:4500/topic/spesific-topic/" + id)
+        axios.get("https://af-project-backend.azurewebsites.net/topic/spesific-topic/" + id)
         .then((res)=>{
             setOneTopic(res.data);
             // console.log(res.data)
@@ -52,7 +52,7 @@ const fromun = {margin:'30px auto'};
     function sendData(e){  
         e.preventDefault();
   
-        axios.put('http://localhost:4500/topic/up-co-opinion/' + id, oneTopic).then(() => {
+        axios.put('https://af-project-backend.azurewebsites.net/topic/up-co-opinion/' + id, oneTopic).then(() => {
             alert("Updated Successfully");
             window.location = ("/dashboard/Co_Topic_reqests");
           }).catch((err)=>{

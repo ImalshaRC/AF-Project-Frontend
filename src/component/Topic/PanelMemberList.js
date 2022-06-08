@@ -27,7 +27,7 @@ function PanelMemberTable() {
             variant="contained"
             color="error"
             onClick={(event) => {
-              axios.put(`http://localhost:4500/groups/update/?groupID=${new URLSearchParams(search).get('groupID')}&panelID=${cellValues.row._id}`)
+              axios.put(`https://af-project-backend.azurewebsites.net/groups/update/?groupID=${new URLSearchParams(search).get('groupID')}&panelID=${cellValues.row._id}`)
               .then((res)=>{
                 alert("Updated");
               }).catch((err)=>{
@@ -49,7 +49,7 @@ function PanelMemberTable() {
 
   const [tableData, setTableData] = useState([])
 
-    axios.get("http://localhost:4500/user/getPanel").then((res) => 
+    axios.get("https://af-project-backend.azurewebsites.net/user/getPanel").then((res) => 
     setTableData((res.data)))
 
     

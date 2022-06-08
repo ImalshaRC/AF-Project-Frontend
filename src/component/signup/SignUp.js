@@ -42,7 +42,7 @@ const SignUp=()=>{
         }
         console.log(user);
 
-        await axios.post("http://localhost:4500/user/add",user).then(() => {
+        await axios.post("https://af-project-backend.azurewebsites.net/user/add",user).then(() => {
           alert("please check your email");
           navigate('/signin');
         })
