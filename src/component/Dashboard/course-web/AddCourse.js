@@ -192,7 +192,7 @@ const AddCourse = () => {
                         </div>
 
                         <Box sx={{ width: '100%' }}>
-                            {/* <LinearProgress variant="determinate" value={progress}/> */}
+                            {/* <LinearProgress */}
                             { loadingFile && <LinearProgress/>}
                         </Box>
 
